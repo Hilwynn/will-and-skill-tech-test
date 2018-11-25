@@ -1,0 +1,141 @@
+$main-color: #13262f;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+button {
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  color: #fff;
+  cursor: pointer;
+  font-family: sans-serif;
+  height: 42px;
+  margin-top: 10px;
+  outline: none;
+  width: 90px;
+  
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    color: $main-color;
+  }
+}
+
+.heading {
+  border-bottom: 1px solid $main-color;
+  padding-bottom: 10px;
+}
+
+.app-wrapper {
+  background-color: $main-color;
+  height: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.lp-wrapper,
+.pp-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 80vh;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 35px;
+  width: 100%;
+}
+
+.lp-wrapper {
+  .input-container {
+    padding: 5px;
+    
+    .input-field {
+      border: 1px solid #000;
+      height: 42px;
+      outline: none;
+      padding: 0 10px;
+      
+      &:focus,
+      &:hover {
+        border-width: 2px;
+      }
+    }
+    .input-label {
+      p {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.lp-wrapper {  
+  .user-portfolios-link-container {
+    margin: 20px 0;
+    
+    .user-portfolios-link {
+      border: 1.5px solid transparent;
+      border-bottom-color: $main-color;
+      color: $main-color;
+      display: inline;
+      outline: none;
+      padding: 2px 0;
+      text-decoration: none;
+      
+      &:focus,
+      &:hover {
+        border-top-color: $main-color;
+      }
+    }
+  }  
+}
+
+.pp-wrapper {
+  h2 {
+    margin-bottom: 0;
+  }
+  
+  .position-description {
+    margin-top: 5px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+  }
+  
+  .position-value {
+    
+    .position-value-row {
+      border: 1px solid $main-color;
+      display: flex;
+      justify-content: space-between;
+      max-width: 200px;
+      padding: 5px;
+      width: 100%;
+      
+      &:nth-child(odd) {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+    
+    .position-value-value {
+      text-align: right;
+    }
+  }
+}
